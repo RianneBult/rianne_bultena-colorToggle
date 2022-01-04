@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(156, 155, 155);
+}
+
+i{
+    cursor: pointer;
+    padding: 5px;
+}
+
+i:hover{
+    opacity: 0.6;
+}
+
+nav{
+    width: 50px;
+}
+
+li{
+    list-style: none;
+    border: 2px solid black;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+label{
+    padding: 5px;
+}
+
+li:nth-of-type(1n):not(:last-child){
+    border-bottom: none;
+}
+
+ul{
+    margin: 0;
+    padding-left: 5px;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-110%);
+    transition: 500ms ease-in-out;
+}
+
+.toggle-list{
+    display: block;
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.list-color-grey{
+    background-color: rgb(156, 155, 155);
+}
+
+.list-color-orange{
+    background-color: rgb(247, 91, 35);
+}
+
+.list-color-blue{
+    background-color: rgb(47, 47, 218);
+}
+
+.list-color-red{
+    background-color: rgb(165, 37, 37);
+}
+
+.list-color-green{
+    background-color: rgb(35, 107, 35);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
